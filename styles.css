@@ -1,0 +1,393 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #0077b6; /* Blue */
+    padding: 15px 10%;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    right: 50px;
+}
+
+.search input{
+    height: 40px;
+    width: 700px;
+
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0077b6, #00a896); /* Blue-Green Gradient */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+#signupBtn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 5px;
+
+}
+
+
+/* Initially hidden signup form */
+.signup-form {
+  display: none; /* Hide the signup form initially */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.signup-form #closeForm {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.section styling/
+.recycling-info, .drop-off-locator {
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recycling-info h1, .drop-off-locator h2 {
+  color: #0077b6;
+}
+
+.recycling-info h2 {
+  margin-top: 20px;
+  color: #0077b6;
+}
+
+.recycling-info ul, .drop-off-locator ul {
+  margin-left: 20px;
+}
+
+.recycling-content{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.recycling-img{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General Section Styling */
+.how-it-works {
+    background-color: #f7f7f7; /* Light background color for contrast */
+    padding: 40px 0; /* Vertical padding */
+    text-align: center;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Steps Section Styling */
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Makes the layout responsive */
+    gap: 30px; /* Adds space between the steps */
+  }
+  
+  .step {
+    background: linear-gradient(to right, #0077b6, #00a896); /* Blue-Green Gradient */
+    flex: 1 1 22%; /* Flex properties to ensure steps are equally spaced */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .step h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step {
+      flex: 1 1 80%; /* Each step takes up more space on smaller screens */
+      margin-bottom: 30px;
+    }
+  }
+
+
+
+
+  /*benefits section*/
+
+.benefits {
+    background-color: #e7f6f5; /* Light background color */
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .benefits h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Benefits List Styling */
+  .benefits-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .benefit {
+    flex: 1 1 22%;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+ 
+  
+  .benefit h3 {
+    font-size: 1.8rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+  }
+  
+  .benefit p {
+    font-size: 1rem;
+    color: #0077b6;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .benefits-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .benefit {
+      flex: 1 1 80%;
+      margin-bottom: 30px;
+    }
+  }
+
+  
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5; /* Light Grey */
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 50px;
+}
+.about {
+    padding: 50px 10%;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.about h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.sell {
+    padding: 50px 10%;
+    text-align: center;
+    background: #e3f2fd; /* Light Blue */
+}
+
+.sell h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sell .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.recycle {
+    padding: 50px 10%;
+    text-align: center;
+    background: #c8e6c9; /* Light Green */
+}
+
+.recycle h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.recycle .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #388e3c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.contact {
+    padding: 50px 10%;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.contact input,
+.contact textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.contact .btn {
+    padding: 10px 20px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

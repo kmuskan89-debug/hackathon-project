@@ -1,0 +1,466 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wash - E-Waste Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     Navigation Bar
+   
+     Hero Section 
+   
+    Services Section 
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <img src="placeholder.jpg" alt="Sell">
+                <h3>Sell Devices</h3>
+                <p>Get instant quotes & best prices.</p>
+            </div>
+            <div class="service-card">
+                <img src="placeholder.jpg" alt="Recycle">
+                <h3>Recycle Responsibly</h3>
+                <p>Eco-friendly e-waste disposal.</p>
+            </div>
+            <div class="service-card">
+                <img src="placeholder.jpg" alt="Track Impact">
+                <h3>Track Your Impact</h3>
+                <p>See how your recycling helps.</p>
+            </div>
+        </div>
+    </section>
+
+ Footer
+    <footer>
+        <p>&copy; 2025 Wash. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kegenix E-Waste Solutions</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-blue: #0077b6;
+            --primary-teal: #00a896;
+            --light-bg: #f5f9fc;
+            --dark-text: #2d3748;
+            --light-text: #4a5568;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #0077b6; /* Blue */
+    padding: 15px 10%;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.hero {
+    background: linear-gradient(to right, #0077b6, #00a896); /* Blue-Green Gradient */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Section */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-teal) 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        
+        /* Crisis Section */
+        .crisis-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            color: var(--primary-blue);
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-teal);
+            margin: 15px auto;
+        }
+        
+        .crisis-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            color: var(--light-text);
+        }
+        
+        /* Problem/Solution Section */
+        .problem-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 60px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .problem-solution {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .problem-section, .solution-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .subsection-title {
+            color: var(--primary-blue);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .feature-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-icon {
+            color: var(--primary-teal);
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background-color: var(--light-bg);
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 300px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-teal) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-blue);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--dark-text);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">REGENIX</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="recycle.html">Recycle</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header Section -->
+    <header class="page-header">
+        <div class="container">
+            <div class="logo">REGENIX</div>
+            <div class="tagline">Recycle Smart, Earn More</div>
+            <p>High quality and affordable smart homes</p>
+        </div>
+    </header>
+
+    <!-- Crisis Section -->
+    <section class="crisis-section">
+        <div class="container">
+            <h2 class="section-title">The Growing Crisis of E-Waste</h2>
+            <p class="crisis-content">
+                Building more environmentally friendly and sustainable environments in a wide range of areas.
+                Electronic waste is the fastest-growing waste stream in the world, with millions of tons generated
+                each year. Proper recycling helps recover valuable materials and prevents hazardous substances
+                from polluting our environment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="container problem-solution">
+        <div class="problem-section">
+            <h3 class="subsection-title">Why Is This a Serious Problem?</h3>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>Improper disposal leads to toxic chemicals leaching into soil and water</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>Millions of dollars in valuable materials are wasted each year</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>Data security risks from improperly discarded devices</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>Increasing volume of e-waste outpacing recycling capabilities</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="solution-section">
+            <h3 class="subsection-title">How We Are Solving This</h3>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <span class="feature-icon">1</span>
+                    <span>Convenient collection points across the city</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">2</span>
+                    <span>Secure data destruction for all devices</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">3</span>
+                    <span>Advanced material recovery technology</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">4</span>
+                    <span>Reward system to incentivize recycling</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">5</span>
+                    <span>Education programs for businesses and schools</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What types of electronics can I recycle?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all consumer electronics including smartphones, laptops, tablets, TVs, gaming consoles, and small appliances. We also accept batteries and cables.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do you ensure my data is secure?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All devices with storage capabilities undergo certified data wiping using DoD-standard software. For devices that cannot be wiped, we physically destroy the storage components.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What happens to my devices after I recycle them?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Devices are first evaluated for reuse potential. If not reusable, they're disassembled into base materials which are sorted and sent to specialized recycling partners. Over 90% of materials are recovered.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How are the rewards calculated?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Rewards are based on device type, condition, and current market value for materials. You'll receive an instant quote when you submit your devices through our app or at a collection center.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Take Action Now!</h2>
+            <p class="cta-subtitle">Delivering your Action from Your Help to Learn. Start Planning your e-waste recycling today and make a difference for our planet.</p>
+            <a href="#" class="cta-button">Start Recycling</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 KEGENIX, KEYSp Research. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+                
+                // Toggle the +/- icon
+                const icon = question.querySelector('span');
+                icon.textContent = item.classList.contains('active') ? '−' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
+
